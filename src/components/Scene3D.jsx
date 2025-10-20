@@ -50,7 +50,7 @@ export default function Scene3D({ className = "" }) {
     loader.setDRACOLoader(dracoLoader)
 
     let model = null
-    loader.load('/models/untitled.glb', (gltf) => {
+    loader.load('./models/untitled.glb', (gltf) => {
       model = gltf.scene
       const box = new THREE.Box3().setFromObject(model)
       const center = box.getCenter(new THREE.Vector3())

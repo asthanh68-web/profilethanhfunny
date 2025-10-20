@@ -49,7 +49,7 @@ export default function Hero() {
 
     const loader = new GLTFLoader()
     const dracoLoader = new DRACOLoader()
-    dracoLoader.setDecoderPath('/draco/')
+    dracoLoader.setDecoderPath('./draco/')
     loader.setDRACOLoader(dracoLoader)
 
     // Handle unknown GLTF extension KHR_materials_pbrSpecularGlossiness by mapping to MeshStandardMaterial
@@ -67,7 +67,7 @@ export default function Hero() {
       }
     }
 
-    loader.load('/models/phihanhgia.glb', (gltf) => {
+    loader.load('./models/phihanhgia.glb', (gltf) => {
       const model = gltf.scene
       model.scale.set(1, 1, 1)
       model.position.set(0, 0, 0)
