@@ -5,6 +5,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: '/',
   resolve: {
     alias: {
       '@components': fileURLToPath(new URL('./src/components', import.meta.url)),
