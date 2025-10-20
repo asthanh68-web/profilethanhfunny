@@ -67,7 +67,7 @@ export default function Hero() {
       }
     }
 
-    loader.load('./models/phihanhgia-transformed.glb', (gltf) => {
+    loader.load('/models/phihanhgia.glb', (gltf) => {
       const model = gltf.scene
       model.scale.set(1, 1, 1)
       model.position.set(0, 0, 0)
