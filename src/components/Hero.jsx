@@ -246,7 +246,7 @@ export default function Hero() {
           <a href="#contact" className="px-8 py-3 rounded-full text-white border border-white/30 hover:bg-white/10 backdrop-blur-md transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500/60">{t('hero.ctaContact')}</a>
         </div>
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="text-white" size={32} />
+          <ArrowDown className="text-white" size={22} />
         </div>
       </div>
     </section>

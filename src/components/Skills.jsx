@@ -18,6 +18,7 @@ const SKILLS = [
   { id: 6, title: "Nguyên mẫu", description: "Tạo các nguyên mẫu tương tác có độ trung thực cao để kiểm tra các khái niệm", icon: <Figma className="w-6 h-6" />, color: "from-red-500 to-rose-500" },
   { id: 7, title: "Chụp ảnh nội thất", description: "Thiết lập ánh sáng, bố cục và xử lý ảnh để truyền tải không gian", icon: <Camera className="w-6 h-6" />, color: "from-emerald-500 to-teal-500" },
   { id: 8, title: "Scan nhà mẫu (Matterport)", description: "Quét không gian 3D chính xác phục vụ VR/360° và tư liệu số", icon: <Scan className="w-6 h-6" />, color: "from-cyan-500 to-blue-500" },
+  { id: 9, title: "Bay chụp Flycam", description: "Bay chụp flycam chính xác phục vụ VR/360° và tư liệu số", icon: <Scan className="w-6 h-6" />, color: "blue-cyan-500 to-blue-500" },
 ]
 
 export default function Skills() {

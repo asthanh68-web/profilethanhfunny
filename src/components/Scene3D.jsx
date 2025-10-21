@@ -11,6 +11,16 @@ export default function Scene3D({ className = "" }) {
   useEffect(() => {
     if (!canvasRef.current || !containerRef.current) return
 
+    const suppressedSubstring = 'glTexSubImage2DRobustANGLE'
+    // Tắt cảnh báo WebGL cụ thể để tránh spam console trong trình duyệt
+    const originalConsoleError = console.error
+    console.error = (...args) => {
+      if (args.some((arg) => typeof arg === 'string' && arg.includes(suppressedSubstring))) {
+        return
+      }
+      originalConsoleError(...args)
+    }
+
     const scene = new THREE.Scene()
     const camera = new THREE.PerspectiveCamera(75, containerRef.current.clientWidth / containerRef.current.clientHeight, 0.1, 1000)
     camera.position.z = 15
@@ -81,6 +91,7 @@ export default function Scene3D({ className = "" }) {
     window.addEventListener('resize', handleResize)
     return () => {
       window.removeEventListener('resize', handleResize)
+      console.error = originalConsoleError
       renderer.dispose()
     }
   }, [])

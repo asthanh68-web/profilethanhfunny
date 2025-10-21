@@ -11,6 +11,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { trackVisit, trackSection } from './analytics.js'
 
+
 gsap.registerPlugin(ScrollTrigger)
 
 export default function App() {

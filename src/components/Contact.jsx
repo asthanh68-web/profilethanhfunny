@@ -78,6 +78,13 @@ export default function Contact() {
               </div>
             </motion.div>
             <motion.div whileHover={{ x: 5 }} className="flex items-start gap-4">
+              <div className="bg-gradient-to-r from-emerald-500 to-cyan-500 p-3 rounded-lg"><Mail className="h-6 w-6 text-white" /></div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-1">Zalo</h3>
+                <p className="text-gray-400">+84 967997452</p>
+              </div>
+            </motion.div>
+            <motion.div whileHover={{ x: 5 }} className="flex items-start gap-4">
               <div className="bg-gradient-to-r from-emerald-500 to-cyan-500 p-3 rounded-lg"><MapPin className="h-6 w-6 text-white" /></div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-1">Địa Điểm</h3>
@@ -92,7 +99,7 @@ export default function Contact() {
                 <div className="flex gap-4 mt-2">
                   <a href="https://t.me/funnythanh" className="text-gray-400 hover:text-white transition-colors">Telegram</a>
                   <a href="https://twitter.com/funnythanh" className="text-gray-400 hover:text-white transition-colors">Twitter</a>
-                  <a href="https://github.com/funnythanh" className="text-gray-400 hover:text-white transition-colors">GitHub</a>
+                  <a href="https://github.com/funnyngao2" className="text-gray-400 hover:text-white transition-colors">GitHub</a>
                 </div>
               </div>
             </motion.div>

@@ -64,7 +64,7 @@ export default function Navbar() {
           isScrolled ? "bg-black/80 backdrop-blur-md py-3 border-b border-white/10 shadow-lg" : "bg-transparent py-5"
         }`}
       >
-        <div className="container mx-auto px-4 flex justify-between items-center">
+        <div className="container mx-auto px-2 flex justify-between items-center">
           <a href="#home" className="text-white font-bold text-xl" aria-label="Funny Thanh Home">
             <span className="bg-gradient-to-r from-emerald-400 to-cyan-500 bg-clip-text text-transparent">Funny Thanh</span>
           </a>
@@ -76,7 +76,7 @@ export default function Navbar() {
                   <a
                     href={link.url}
                     onClick={(e)=>handleNavClick(e, link.url)}
-                    className={`relative px-4 py-2 rounded-full transition-colors sweep-light focus:outline-none focus:ring-2 focus:ring-emerald-500/60 ${
+                    className={`relative px-4 whitespace-nowrap py-2 rounded-full transition-colors sweep-light focus:outline-none focus:ring-2 focus:ring-emerald-500/60 ${
                       active === link.url.replace('#','') ? 'text-white' : 'text-gray-300 hover:text-white'
                     }`}
                     aria-current={active === link.url.replace('#','') ? 'page' : undefined}
