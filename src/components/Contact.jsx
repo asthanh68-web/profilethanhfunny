@@ -78,7 +78,12 @@ export default function Contact() {
               </div>
             </motion.div>
             <motion.div whileHover={{ x: 5 }} className="flex items-start gap-4">
-              <div className="bg-gradient-to-r from-emerald-500 to-cyan-500 p-3 rounded-lg"><Mail className="h-6 w-6 text-white" /></div>
+              <div className="bg-gradient-to-r from-emerald-500 to-cyan-500 p-3 rounded-lg">
+                {/* Inline SVG: stylized Z (Zalo-like) */}
+                <svg className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M4 5h16M4 5l12 14M4 19h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
               <div>
                 <h3 className="text-xl font-bold text-white mb-1">Zalo</h3>
                 <p className="text-gray-400">+84 967997452</p>
